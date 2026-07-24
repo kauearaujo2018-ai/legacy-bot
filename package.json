@@ -1,0 +1,38 @@
+{
+  "name": "legacy-bot",
+  "version": "1.0.0",
+  "description": "Bot Discord Profissional para o Grupo Legacy",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "register-commands": "node src/scripts/registerCommands.js",
+    "setup-db": "node src/scripts/setupDatabase.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "legacy",
+    "administration"
+  ],
+  "author": "Grupo Legacy",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.0",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3",
+    "sqlite3": "^5.1.6",
+    "better-sqlite3": "^9.0.0",
+    "axios": "^1.6.0",
+    "bcryptjs": "^2.4.3",
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  }
+}
